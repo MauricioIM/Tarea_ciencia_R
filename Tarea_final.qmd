@@ -5,31 +5,16 @@ format: pdf
 editor: visual
 ---
 
-## Quarto
+## Capturas
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
+Respecto de la proyección de los desembarques, para el año 2022, en la zona centro-norte el modelo de series de tiempos seleccionado para realizar la predicción (utilizando AIC) fue un ARIMA (4,0,0), en tanto que para el caso de la zona centro-sur el modelo seleccionado corresponde a un ARIMA (1,1,0). La proyección para la zona centro-norte para 2022 fue 596 t (Figura 16) y para la zona centro-sur 3652 t 
 
 ```{r}
 #| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
-
-```{r}
-#| echo: true
 #| Include: true
 #| eval: true
 #| warning: false
+
 ```
 
+![Proyección de la captura](Proyeccion_norte.png)

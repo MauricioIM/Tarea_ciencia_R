@@ -3,7 +3,7 @@ rm(list=ls())
 library(TSA)
 
 current_path = rstudioapi::getActiveDocumentContext()$path 
-setwd(dirname(current_path ))
+#setwd(dirname(current_path ))
 
 #setwd("C:/Users/mauricio.ibarra/Documents/IFOP/Proyectos/CTP/CBA_Camar?n nailon/CTP2021/Hito 3.- 1er Informe T?cnico (Estatus)/Proyecci?n desembarque")
 
@@ -53,7 +53,7 @@ library(forecast)
 
 
 
-png(file="Proyeccion_norte.png", width = 1300, height = 600)
+# png(file="Proyeccion_norte.png", width = 1300, height = 600)
 
 plot(forecast(select, h=1, level=c(90), cex.axis=1.3), ylim=c(0,6000), lty=1, 
      lwd=3, main="Proyección desembarque 2023",
@@ -66,5 +66,5 @@ par(new=T)
 plot(62, 1137, col="red", h=1, pch= 16, xlim=c(0,62), ylim=c(0, 6000), axes = FALSE, ann = FALSE)
 
 
-dev.off()
+# dev.off()
 
